@@ -1,0 +1,7 @@
+{
+  "name": "careerforge-server",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/server.ts"
+  }
+}
