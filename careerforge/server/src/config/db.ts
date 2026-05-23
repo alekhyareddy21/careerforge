@@ -1,10 +1,19 @@
-import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 
-export const connectDB = async () => {
+const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI as string);
-    console.log('MongoDB Connected');
+
+    await mongoose.connect(
+      "mongodb+srv://studybot:Reddy54321@cluster0.gwct7lq.mongodb.net/?appName=Cluster0"
+    );
+
+    console.log("MongoDB Connected 🚀");
+
   } catch (error) {
+
     console.log(error);
+
   }
 };
+
+module.exports = connectDB;

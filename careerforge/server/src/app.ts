@@ -1,13 +1,13 @@
-import express from 'express';
-import cors from 'cors';
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json({ message: 'CareerForge API Running' });
+app.get("/", (req: any, res: any) => {
+  res.send("CareerForge API Running 🚀");
 });
 
 export default app;
