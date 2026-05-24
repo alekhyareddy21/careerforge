@@ -1,19 +1,14 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-
-    await mongoose.connect(
-      "mongodb+srv://studybot:Reddy54321@cluster0.gwct7lq.mongodb.net/?appName=Cluster0"
-    );
+    await mongoose.connect(process.env.MONGO_URI as string);
 
     console.log("MongoDB Connected 🚀");
-
   } catch (error) {
-
     console.log(error);
-
+    process.exit(1);
   }
 };
 
-module.exports = connectDB;
+export default connectDB;
