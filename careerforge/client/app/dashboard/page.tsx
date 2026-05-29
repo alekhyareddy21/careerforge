@@ -123,10 +123,10 @@ export default function DashboardPage() {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white flex">
+    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-black text-white flex">
 
       {/* Sidebar */}
-      <aside className="w-64 bg-[#111] border-r border-gray-800 p-6">
+      <aside className="w-64 bg-slate-900/80 backdrop-blur-lg border-r border-blue-900/50 p-6">
 
         <h1 className="text-3xl font-bold">
           CareerForge
@@ -185,7 +185,7 @@ export default function DashboardPage() {
               Logout
             </button>
 
-            <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center font-bold">
+          <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
               A
             </div>
 
@@ -207,7 +207,7 @@ export default function DashboardPage() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 mt-10">
 
-            <div className="bg-[#111] border border-gray-800 rounded-2xl p-6">
+            <div className="bg-slate-900/60 backdrop-blur-lg border border-blue-900/50 rounded-2xl p-6">
 
               <h2 className="text-xl font-semibold">
                 Resumes
@@ -246,7 +246,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Add Job Form */}
-          <div className="mt-12 bg-[#111] border border-gray-800 rounded-2xl p-8">
+          <div className="mt-12 bg-slate-900/60 backdrop-blur-lg border border-blue-900/50 rounded-2xl p-8">
 
             <h2 className="text-3xl font-bold">
               Add Job Application
@@ -282,7 +282,7 @@ export default function DashboardPage() {
 
             <button
               onClick={addJob}
-              className="mt-6 px-6 py-3 bg-white text-black rounded-xl font-semibold hover:scale-105 transition"
+              className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition"
             >
               Add Job
             </button>
@@ -304,7 +304,7 @@ export default function DashboardPage() {
 
               <table className="w-full text-left">
 
-                <thead className="bg-[#111]">
+                <thead className="bg-slate-900/70">
 
                   <tr>
 
@@ -383,7 +383,7 @@ export default function DashboardPage() {
 
                           <button
                             onClick={() => deleteJob(job._id)}
-                            className="px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition"
+                            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition"
                           >
                             Delete
                           </button>
